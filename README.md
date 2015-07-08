@@ -1,10 +1,11 @@
 # FACG
-AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in Java to convert the official html cheat sheet to Android String XML Resource.
+AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in Java to convert the official html cheat sheet to Android Resources.
 
 * The complete Font Awesome 4.3.0 icon reference for Android Developers 
   (last update on 7 July 2015)
+
+##### XML String Resource #####
 ```xml
-###XML String Resource
 <?xml version="1.0" encoding="utf-8"?>
 	<resources>
  		<string name="fa-adjust">&#xf042;</string>
@@ -602,9 +603,8 @@ AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in
 		<string name="fa-youtube-square">&#xf166;</string>
  </resources>
  ```
- 
+ ##### Java Enum Class #####
  ```java
-###Java Enum class
 public enum FaIcon {
 
 	FA_ADJUST("&#xf042;"),
@@ -1208,12 +1208,12 @@ public enum FaIcon {
 	}
 }
 ```
+##### Enum XML String Resource #####
  ```xml
-###XML Enum Resource
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<declare-styleable name="FaTextView">
-		<attr name="iconCheat" format="enum">			
+	<declare-styleable name="CustomViewName">
+		<attr name="customAttrName" format="enum">			
 			<enum name="fa-adjust" value="&#xf042;" />
 			<enum name="fa-adn" value="&#xf170;" />
 			<enum name="fa-align-center" value="&#xf037;" />
