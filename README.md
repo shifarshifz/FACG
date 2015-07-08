@@ -4,7 +4,7 @@ AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in
 * The complete Font Awesome 4.3.0 icon reference for Android Developers 
   (last update on 7 July 2015)
 ```xml
-### XML String Resource
+###XML String Resource
 <?xml version="1.0" encoding="utf-8"?>
 	<resources>
  		<string name="fa-adjust">&#xf042;</string>
@@ -604,7 +604,7 @@ AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in
  ```
  
  ```java
-### Java Enum class
+###Java Enum class
 public enum FaIcon {
 
 	FA_ADJUST("&#xf042;"),
@@ -1209,7 +1209,7 @@ public enum FaIcon {
 }
 ```
  ```xml
-### XML Enum Resource
+###XML Enum Resource
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<declare-styleable name="FaTextView">

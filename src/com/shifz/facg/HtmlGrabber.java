@@ -14,6 +14,7 @@ import java.net.URL;
 public class HtmlGrabber {
 	
 	private String url;
+	private static final String LOCAL_HTML_FILE_PATH=  "fa_cheatsheet_html.txt";
 	
 	public HtmlGrabber(String url){
 		this.url = url;
@@ -45,8 +46,7 @@ public class HtmlGrabber {
 		}else{
 			
 			//Collect from local
-			
-			File f = new File("fa_cheatsheet_html.txt");
+			File f = new File(LOCAL_HTML_FILE_PATH);
 			BufferedReader br = new BufferedReader(new FileReader(f));
 			while((htmlLine = br.readLine())!=null){
 				htmlBuilder.append(htmlLine);

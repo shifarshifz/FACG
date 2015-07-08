@@ -41,48 +41,52 @@ public class FACG {
 						        "\n\t\t</attr>"+
 						    "\n\t</declare-styleable>"+
 						"\n</resources>",
-	XML_ENUM_ROW_FORMAT = "\n\t\t\t<enum name=\"%s\" value=\"%s\" />"
-			;
+	XML_ENUM_ROW_FORMAT = "\n\t\t\t<enum name=\"%s\" value=\"%s\" />";
 	
 	
 	//Static instance
 	private static FACG instance;
 	
+	private static String html;
+	private static Map<String,String> cheatHash;
+	private StringBuilder stringBuilder =  new StringBuilder();
+	
 	//Securing exterior object creation
 	private FACG(){};
 	
 	//Getting instance of FACG
-	public static FACG getInstance(){
+	public static FACG getInstance() throws Exception{
+		
 		if(instance==null){
 			instance = new FACG();
 		}
+		
+		if(html==null){
+			html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
+		}
+		
+		if(cheatHash==null){
+			cheatHash = getCheatHash();
+		}
+		
 		return instance;
 	}
 
 	//Generating cheatcodes
 	public String getXmlString() throws Exception {
-		
-		String html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
-		
-		//Return cheat as key-value pair
-		Map<String, String> cheatHash = getCheatHash(html);
-		
-		//To store xml formatted code
-		StringBuilder cheatCodesXml =  new StringBuilder();
+	
+		stringBuilder.delete(0, stringBuilder.length());
 		
 		//Creating each string resource
 		for(Entry<String, String> entry: cheatHash.entrySet()){
-			cheatCodesXml.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey(),entry.getValue()));
+			stringBuilder.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey(),entry.getValue()));
 		}
 	
-		//Creating final xml format
-		String finalXml = String.format(XML_RESOURCE_FORMAT, cheatCodesXml.toString());
-		
-		//returning xml
-		return finalXml;
+		//returning final xml
+		return String.format(XML_RESOURCE_FORMAT, stringBuilder.toString());
 	}
 
-	private Map<String, String> getCheatHash(String html) {
+	private static Map<String, String> getCheatHash() {
 		
 		Map<String,String> cheatHash = new LinkedHashMap<>();
 		
@@ -104,23 +108,20 @@ public class FACG {
 			cheatHash.put(key, value);
 		}
 	
-		
 		return cheatHash;
 	}
 	
 
+	//Return Enum Class
 	public String getJavaEnum() throws Exception{
 		
-		String html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
+		stringBuilder.delete(0, stringBuilder.length());
 		
-		//Return cheat as key-value pair
-		Map<String, String> cheatHash = getCheatHash(html);
-		
-		StringBuilder enumBuilder = new StringBuilder();
 		for(Entry<String,String> entry:cheatHash.entrySet()){
-			enumBuilder.append(String.format(ENUM_FORMAT, entry.getKey().replaceAll("-", "_").toUpperCase(),entry.getValue()));
+			stringBuilder.append(String.format(ENUM_FORMAT, entry.getKey().replaceAll("-", "_").toUpperCase(),entry.getValue()));
 		}
-		String finalEnumClass = enumBuilder.toString();
+		
+		String finalEnumClass = stringBuilder.toString();
 		
 		int lastCommanAt = finalEnumClass.lastIndexOf(",");
 		finalEnumClass = finalEnumClass.substring(0, lastCommanAt).concat(";");
@@ -129,21 +130,16 @@ public class FACG {
 	}
 
 	
+	//Return XML Enum
 	public String getXmlEnum() throws Exception {
 		
-		String html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
+		stringBuilder.delete(0, stringBuilder.length());
 		
-		//Return cheat as key-value pair
-		Map<String, String> cheatHash = getCheatHash(html);
-		
-		StringBuilder enumBuilder = new StringBuilder();
 		for(Entry<String,String> entry:cheatHash.entrySet()){
-			enumBuilder.append(String.format(XML_ENUM_ROW_FORMAT, entry.getKey(),entry.getValue()));
+			stringBuilder.append(String.format(XML_ENUM_ROW_FORMAT, entry.getKey(),entry.getValue()));
 		}
 		
-		
-		
-		return String.format(XML_ENUM_FORMAT, enumBuilder.toString());
+		return String.format(XML_ENUM_FORMAT, stringBuilder.toString());
 	}
 	
 }

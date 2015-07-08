@@ -11,19 +11,29 @@ public class Main {
 		System.out.println("Starting FACG...");
 		
 		FACG mFacg = FACG.getInstance();
-		String cheatCodes = mFacg.getXmlEnum();
+		
+		String asXmlStrings = mFacg.getXmlString();
+		String asXmlEnums = mFacg.getXmlEnum();
+		String asJavaEnums = mFacg.getJavaEnum();
+		
+		saveFile("string.xml",asXmlStrings);
+		saveFile("attrs.xml",asXmlEnums);
+		saveFile("FaIcon.java",asJavaEnums);
+		
+		System.out.println("FACG Finished");
+	}
+
+	private static void saveFile(String fileName, String data) throws Exception {
 	
-		File f = new File("enums.xml");
+		File f = new File(fileName);
 		if(!f.exists()){
-			System.out.println("Building enums.xml ...");
 			f.createNewFile();
 		}
-		
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-		bw.write(cheatCodes);
+		bw.write(data);
 		bw.flush();
 		bw.close();
 		
-		System.out.println("File saved as 'enums.java'");
+		System.out.println(fileName+" saved!");
 	}
 }
