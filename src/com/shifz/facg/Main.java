@@ -11,11 +11,11 @@ public class Main {
 		System.out.println("Starting FACG...");
 		
 		FACG mFacg = FACG.getInstance();
-		String cheatCodes = mFacg.getXmlString();
+		String cheatCodes = mFacg.getXmlEnum();
 	
-		File f = new File("string.xml");
+		File f = new File("enums.xml");
 		if(!f.exists()){
-			System.out.println("Building string.xml ...");
+			System.out.println("Building enums.xml ...");
 			f.createNewFile();
 		}
 		
@@ -24,8 +24,6 @@ public class Main {
 		bw.flush();
 		bw.close();
 		
-		System.out.println("File saved as 'string.xml'");
-		
-		
+		System.out.println("File saved as 'enums.java'");
 	}
 }

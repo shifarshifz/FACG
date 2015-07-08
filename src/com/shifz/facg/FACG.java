@@ -19,7 +19,29 @@ public class FACG {
 			NODES_DELIMETER = "<i class=\"fa fa-fw\">",
 			KEY_VALUE_DELIMETER = "</i>",
 			FINAL_VALUE_DELIMETER = "<span class=\"muted\">",
-			FINAL_VALUE_DELIMETER_2 = " <span class=\"text-muted\">";
+			FINAL_VALUE_DELIMETER_2 = " <span class=\"text-muted\">",
+	
+	ENUM_FORMAT = "\n\t%s(\"%s\"),",
+	ENUM_CLASS_FORMAT = "public enum FaIcon {"+
+	
+	    "\n%s"+
+	
+	    "\n\n\tpublic String cheatCode;"+
+	
+	    "\n\n\tprivate FaIcon(String cheatCode){"+
+	        "\n\t\tthis.cheatCode = cheatCode;"+
+	    "\n\t}"+
+    "\n}",
+    
+    XML_ENUM_FORMAT=  "<?xml version=\"1.0\" encoding=\"utf-8\"?>"+
+						"\n<resources>"+
+						    "\n\t<declare-styleable name=\"FaTextView\">"+
+						        "\n\t\t<attr name=\"iconCheat\" format=\"enum\">"+
+						            "\t\t\t%s"+
+						        "\n\t\t</attr>"+
+						    "\n\t</declare-styleable>"+
+						"\n</resources>",
+	XML_ENUM_ROW_FORMAT = "\n\t\t\t<enum name=\"%s\" value=\"%s\" />"
 			;
 	
 	
@@ -87,5 +109,41 @@ public class FACG {
 	}
 	
 
+	public String getJavaEnum() throws Exception{
+		
+		String html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
+		
+		//Return cheat as key-value pair
+		Map<String, String> cheatHash = getCheatHash(html);
+		
+		StringBuilder enumBuilder = new StringBuilder();
+		for(Entry<String,String> entry:cheatHash.entrySet()){
+			enumBuilder.append(String.format(ENUM_FORMAT, entry.getKey().replaceAll("-", "_").toUpperCase(),entry.getValue()));
+		}
+		String finalEnumClass = enumBuilder.toString();
+		
+		int lastCommanAt = finalEnumClass.lastIndexOf(",");
+		finalEnumClass = finalEnumClass.substring(0, lastCommanAt).concat(";");
+		
+		return String.format(ENUM_CLASS_FORMAT, finalEnumClass);
+	}
+
+	
+	public String getXmlEnum() throws Exception {
+		
+		String html = new HtmlGrabber(CHEATSEET_URL).getHtml(false);
+		
+		//Return cheat as key-value pair
+		Map<String, String> cheatHash = getCheatHash(html);
+		
+		StringBuilder enumBuilder = new StringBuilder();
+		for(Entry<String,String> entry:cheatHash.entrySet()){
+			enumBuilder.append(String.format(XML_ENUM_ROW_FORMAT, entry.getKey(),entry.getValue()));
+		}
+		
+		
+		
+		return String.format(XML_ENUM_FORMAT, enumBuilder.toString());
+	}
 	
 }
