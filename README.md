@@ -603,7 +603,9 @@ AKA FontAwesomeCheatSheetGrabber is a smaaaalllll utility application written in
 		<string name="fa-youtube-square">&#xf166;</string>
  </resources>
  ```
- ##### Java Enum Class #####
+ 
+##### Java Enum Class #####
+ 
  ```java
 public enum FaIcon {
 
