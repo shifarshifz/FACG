@@ -21,14 +21,14 @@ public class FACG {
 			FINAL_VALUE_DELIMETER = "<span class=\"muted\">",
 			FINAL_VALUE_DELIMETER_2 = " <span class=\"text-muted\">",
 	
-	ENUM_FORMAT = "\n\t%s(\"%s\"),",
+	ENUM_FORMAT = "\n\t%s(%s),",
 	ENUM_CLASS_FORMAT = "public enum FaIcon {"+
 	
 	    "\n%s"+
 	
-	    "\n\n\tpublic String cheatCode;"+
+	    "\n\n\tpublic int cheatCode;"+
 	
-	    "\n\n\tprivate FaIcon(String cheatCode){"+
+	    "\n\n\tprivate FaIcon(int cheatCode){"+
 	        "\n\t\tthis.cheatCode = cheatCode;"+
 	    "\n\t}"+
     "\n}",
@@ -118,7 +118,8 @@ public class FACG {
 		stringBuilder.delete(0, stringBuilder.length());
 		
 		for(Entry<String,String> entry:cheatHash.entrySet()){
-			stringBuilder.append(String.format(ENUM_FORMAT, entry.getKey().replaceAll("-", "_").toUpperCase(),entry.getValue()));
+			String key =  entry.getKey().replaceAll("-", "_");
+			stringBuilder.append(String.format(ENUM_FORMAT,key.toUpperCase(),"R.string."+key.toLowerCase()));
 		}
 		
 		String finalEnumClass = stringBuilder.toString();
