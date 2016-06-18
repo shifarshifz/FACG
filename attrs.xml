@@ -2,13 +2,16 @@
 <resources>
 	<declare-styleable name="FaTextView">
 		<attr name="iconCheat" format="enum">			
+			<enum name="fa-500px" value="&#xf26e;" />
 			<enum name="fa-adjust" value="&#xf042;" />
 			<enum name="fa-adn" value="&#xf170;" />
 			<enum name="fa-align-center" value="&#xf037;" />
 			<enum name="fa-align-justify" value="&#xf039;" />
 			<enum name="fa-align-left" value="&#xf036;" />
 			<enum name="fa-align-right" value="&#xf038;" />
+			<enum name="fa-amazon" value="&#xf270;" />
 			<enum name="fa-ambulance" value="&#xf0f9;" />
+			<enum name="fa-american-sign-language-interpreting" value="&#xf2a3;" />
 			<enum name="fa-anchor" value="&#xf13d;" />
 			<enum name="fa-android" value="&#xf17b;" />
 			<enum name="fa-angellist" value="&#xf209;" />
@@ -39,16 +42,30 @@
 			<enum name="fa-arrows-alt" value="&#xf0b2;" />
 			<enum name="fa-arrows-h" value="&#xf07e;" />
 			<enum name="fa-arrows-v" value="&#xf07d;" />
+			<enum name="fa-asl-interpreting" value="&#xf2a3;" />
+			<enum name="fa-assistive-listening-systems" value="&#xf2a2;" />
 			<enum name="fa-asterisk" value="&#xf069;" />
 			<enum name="fa-at" value="&#xf1fa;" />
+			<enum name="fa-audio-description" value="&#xf29e;" />
 			<enum name="fa-automobile" value="&#xf1b9;" />
 			<enum name="fa-backward" value="&#xf04a;" />
+			<enum name="fa-balance-scale" value="&#xf24e;" />
 			<enum name="fa-ban" value="&#xf05e;" />
 			<enum name="fa-bank" value="&#xf19c;" />
 			<enum name="fa-bar-chart" value="&#xf080;" />
 			<enum name="fa-bar-chart-o" value="&#xf080;" />
 			<enum name="fa-barcode" value="&#xf02a;" />
 			<enum name="fa-bars" value="&#xf0c9;" />
+			<enum name="fa-battery-0" value="&#xf244;" />
+			<enum name="fa-battery-1" value="&#xf243;" />
+			<enum name="fa-battery-2" value="&#xf242;" />
+			<enum name="fa-battery-3" value="&#xf241;" />
+			<enum name="fa-battery-4" value="&#xf240;" />
+			<enum name="fa-battery-empty" value="&#xf244;" />
+			<enum name="fa-battery-full" value="&#xf240;" />
+			<enum name="fa-battery-half" value="&#xf242;" />
+			<enum name="fa-battery-quarter" value="&#xf243;" />
+			<enum name="fa-battery-three-quarters" value="&#xf241;" />
 			<enum name="fa-bed" value="&#xf236;" />
 			<enum name="fa-beer" value="&#xf0fc;" />
 			<enum name="fa-behance" value="&#xf1b4;" />
@@ -63,12 +80,17 @@
 			<enum name="fa-bitbucket" value="&#xf171;" />
 			<enum name="fa-bitbucket-square" value="&#xf172;" />
 			<enum name="fa-bitcoin" value="&#xf15a;" />
+			<enum name="fa-black-tie" value="&#xf27e;" />
+			<enum name="fa-blind" value="&#xf29d;" />
+			<enum name="fa-bluetooth" value="&#xf293;" />
+			<enum name="fa-bluetooth-b" value="&#xf294;" />
 			<enum name="fa-bold" value="&#xf032;" />
 			<enum name="fa-bolt" value="&#xf0e7;" />
 			<enum name="fa-bomb" value="&#xf1e2;" />
 			<enum name="fa-book" value="&#xf02d;" />
 			<enum name="fa-bookmark" value="&#xf02e;" />
 			<enum name="fa-bookmark-o" value="&#xf097;" />
+			<enum name="fa-braille" value="&#xf2a1;" />
 			<enum name="fa-briefcase" value="&#xf0b1;" />
 			<enum name="fa-btc" value="&#xf15a;" />
 			<enum name="fa-bug" value="&#xf188;" />
@@ -81,7 +103,11 @@
 			<enum name="fa-cab" value="&#xf1ba;" />
 			<enum name="fa-calculator" value="&#xf1ec;" />
 			<enum name="fa-calendar" value="&#xf073;" />
+			<enum name="fa-calendar-check-o" value="&#xf274;" />
+			<enum name="fa-calendar-minus-o" value="&#xf272;" />
 			<enum name="fa-calendar-o" value="&#xf133;" />
+			<enum name="fa-calendar-plus-o" value="&#xf271;" />
+			<enum name="fa-calendar-times-o" value="&#xf273;" />
 			<enum name="fa-camera" value="&#xf030;" />
 			<enum name="fa-camera-retro" value="&#xf083;" />
 			<enum name="fa-car" value="&#xf1b9;" />
@@ -97,7 +123,9 @@
 			<enum name="fa-cart-plus" value="&#xf217;" />
 			<enum name="fa-cc" value="&#xf20a;" />
 			<enum name="fa-cc-amex" value="&#xf1f3;" />
+			<enum name="fa-cc-diners-club" value="&#xf24c;" />
 			<enum name="fa-cc-discover" value="&#xf1f2;" />
+			<enum name="fa-cc-jcb" value="&#xf24b;" />
 			<enum name="fa-cc-mastercard" value="&#xf1f1;" />
 			<enum name="fa-cc-paypal" value="&#xf1f4;" />
 			<enum name="fa-cc-stripe" value="&#xf1f5;" />
@@ -119,12 +147,14 @@
 			<enum name="fa-chevron-right" value="&#xf054;" />
 			<enum name="fa-chevron-up" value="&#xf077;" />
 			<enum name="fa-child" value="&#xf1ae;" />
+			<enum name="fa-chrome" value="&#xf268;" />
 			<enum name="fa-circle" value="&#xf111;" />
 			<enum name="fa-circle-o" value="&#xf10c;" />
 			<enum name="fa-circle-o-notch" value="&#xf1ce;" />
 			<enum name="fa-circle-thin" value="&#xf1db;" />
 			<enum name="fa-clipboard" value="&#xf0ea;" />
 			<enum name="fa-clock-o" value="&#xf017;" />
+			<enum name="fa-clone" value="&#xf24d;" />
 			<enum name="fa-close" value="&#xf00d;" />
 			<enum name="fa-cloud" value="&#xf0c2;" />
 			<enum name="fa-cloud-download" value="&#xf0ed;" />
@@ -133,20 +163,26 @@
 			<enum name="fa-code" value="&#xf121;" />
 			<enum name="fa-code-fork" value="&#xf126;" />
 			<enum name="fa-codepen" value="&#xf1cb;" />
+			<enum name="fa-codiepie" value="&#xf284;" />
 			<enum name="fa-coffee" value="&#xf0f4;" />
 			<enum name="fa-cog" value="&#xf013;" />
 			<enum name="fa-cogs" value="&#xf085;" />
 			<enum name="fa-columns" value="&#xf0db;" />
 			<enum name="fa-comment" value="&#xf075;" />
 			<enum name="fa-comment-o" value="&#xf0e5;" />
+			<enum name="fa-commenting" value="&#xf27a;" />
+			<enum name="fa-commenting-o" value="&#xf27b;" />
 			<enum name="fa-comments" value="&#xf086;" />
 			<enum name="fa-comments-o" value="&#xf0e6;" />
 			<enum name="fa-compass" value="&#xf14e;" />
 			<enum name="fa-compress" value="&#xf066;" />
 			<enum name="fa-connectdevelop" value="&#xf20e;" />
+			<enum name="fa-contao" value="&#xf26d;" />
 			<enum name="fa-copy" value="&#xf0c5;" />
 			<enum name="fa-copyright" value="&#xf1f9;" />
+			<enum name="fa-creative-commons" value="&#xf25e;" />
 			<enum name="fa-credit-card" value="&#xf09d;" />
+			<enum name="fa-credit-card-alt" value="&#xf283;" />
 			<enum name="fa-crop" value="&#xf125;" />
 			<enum name="fa-crosshairs" value="&#xf05b;" />
 			<enum name="fa-css3" value="&#xf13c;" />
@@ -157,6 +193,8 @@
 			<enum name="fa-dashboard" value="&#xf0e4;" />
 			<enum name="fa-dashcube" value="&#xf210;" />
 			<enum name="fa-database" value="&#xf1c0;" />
+			<enum name="fa-deaf" value="&#xf2a4;" />
+			<enum name="fa-deafness" value="&#xf2a4;" />
 			<enum name="fa-dedent" value="&#xf03b;" />
 			<enum name="fa-delicious" value="&#xf1a5;" />
 			<enum name="fa-desktop" value="&#xf108;" />
@@ -169,6 +207,7 @@
 			<enum name="fa-dribbble" value="&#xf17d;" />
 			<enum name="fa-dropbox" value="&#xf16b;" />
 			<enum name="fa-drupal" value="&#xf1a9;" />
+			<enum name="fa-edge" value="&#xf282;" />
 			<enum name="fa-edit" value="&#xf044;" />
 			<enum name="fa-eject" value="&#xf052;" />
 			<enum name="fa-ellipsis-h" value="&#xf141;" />
@@ -177,6 +216,7 @@
 			<enum name="fa-envelope" value="&#xf0e0;" />
 			<enum name="fa-envelope-o" value="&#xf003;" />
 			<enum name="fa-envelope-square" value="&#xf199;" />
+			<enum name="fa-envira" value="&#xf299;" />
 			<enum name="fa-eraser" value="&#xf12d;" />
 			<enum name="fa-eur" value="&#xf153;" />
 			<enum name="fa-euro" value="&#xf153;" />
@@ -185,11 +225,13 @@
 			<enum name="fa-exclamation-circle" value="&#xf06a;" />
 			<enum name="fa-exclamation-triangle" value="&#xf071;" />
 			<enum name="fa-expand" value="&#xf065;" />
+			<enum name="fa-expeditedssl" value="&#xf23e;" />
 			<enum name="fa-external-link" value="&#xf08e;" />
 			<enum name="fa-external-link-square" value="&#xf14c;" />
 			<enum name="fa-eye" value="&#xf06e;" />
 			<enum name="fa-eye-slash" value="&#xf070;" />
 			<enum name="fa-eyedropper" value="&#xf1fb;" />
+			<enum name="fa-fa" value="&#xf2b4;" />
 			<enum name="fa-facebook" value="&#xf09a;" />
 			<enum name="fa-facebook-f" value="&#xf09a;" />
 			<enum name="fa-facebook-official" value="&#xf230;" />
@@ -197,6 +239,7 @@
 			<enum name="fa-fast-backward" value="&#xf049;" />
 			<enum name="fa-fast-forward" value="&#xf050;" />
 			<enum name="fa-fax" value="&#xf1ac;" />
+			<enum name="fa-feed" value="&#xf09e;" />
 			<enum name="fa-female" value="&#xf182;" />
 			<enum name="fa-fighter-jet" value="&#xf0fb;" />
 			<enum name="fa-file" value="&#xf15b;" />
@@ -222,6 +265,8 @@
 			<enum name="fa-filter" value="&#xf0b0;" />
 			<enum name="fa-fire" value="&#xf06d;" />
 			<enum name="fa-fire-extinguisher" value="&#xf134;" />
+			<enum name="fa-firefox" value="&#xf269;" />
+			<enum name="fa-first-order" value="&#xf2b0;" />
 			<enum name="fa-flag" value="&#xf024;" />
 			<enum name="fa-flag-checkered" value="&#xf11e;" />
 			<enum name="fa-flag-o" value="&#xf11d;" />
@@ -234,6 +279,9 @@
 			<enum name="fa-folder-open" value="&#xf07c;" />
 			<enum name="fa-folder-open-o" value="&#xf115;" />
 			<enum name="fa-font" value="&#xf031;" />
+			<enum name="fa-font-awesome" value="&#xf2b4;" />
+			<enum name="fa-fonticons" value="&#xf280;" />
+			<enum name="fa-fort-awesome" value="&#xf286;" />
 			<enum name="fa-forumbee" value="&#xf211;" />
 			<enum name="fa-forward" value="&#xf04e;" />
 			<enum name="fa-foursquare" value="&#xf180;" />
@@ -245,18 +293,26 @@
 			<enum name="fa-ge" value="&#xf1d1;" />
 			<enum name="fa-gear" value="&#xf013;" />
 			<enum name="fa-gears" value="&#xf085;" />
-			<enum name="fa-genderless" value="&#xf1db;" />
+			<enum name="fa-genderless" value="&#xf22d;" />
+			<enum name="fa-get-pocket" value="&#xf265;" />
+			<enum name="fa-gg" value="&#xf260;" />
+			<enum name="fa-gg-circle" value="&#xf261;" />
 			<enum name="fa-gift" value="&#xf06b;" />
 			<enum name="fa-git" value="&#xf1d3;" />
 			<enum name="fa-git-square" value="&#xf1d2;" />
 			<enum name="fa-github" value="&#xf09b;" />
 			<enum name="fa-github-alt" value="&#xf113;" />
 			<enum name="fa-github-square" value="&#xf092;" />
+			<enum name="fa-gitlab" value="&#xf296;" />
 			<enum name="fa-gittip" value="&#xf184;" />
 			<enum name="fa-glass" value="&#xf000;" />
+			<enum name="fa-glide" value="&#xf2a5;" />
+			<enum name="fa-glide-g" value="&#xf2a6;" />
 			<enum name="fa-globe" value="&#xf0ac;" />
 			<enum name="fa-google" value="&#xf1a0;" />
 			<enum name="fa-google-plus" value="&#xf0d5;" />
+			<enum name="fa-google-plus-circle" value="&#xf2b3;" />
+			<enum name="fa-google-plus-official" value="&#xf2b3;" />
 			<enum name="fa-google-plus-square" value="&#xf0d4;" />
 			<enum name="fa-google-wallet" value="&#xf1ee;" />
 			<enum name="fa-graduation-cap" value="&#xf19d;" />
@@ -264,10 +320,21 @@
 			<enum name="fa-group" value="&#xf0c0;" />
 			<enum name="fa-h-square" value="&#xf0fd;" />
 			<enum name="fa-hacker-news" value="&#xf1d4;" />
+			<enum name="fa-hand-grab-o" value="&#xf255;" />
+			<enum name="fa-hand-lizard-o" value="&#xf258;" />
 			<enum name="fa-hand-o-down" value="&#xf0a7;" />
 			<enum name="fa-hand-o-left" value="&#xf0a5;" />
 			<enum name="fa-hand-o-right" value="&#xf0a4;" />
 			<enum name="fa-hand-o-up" value="&#xf0a6;" />
+			<enum name="fa-hand-paper-o" value="&#xf256;" />
+			<enum name="fa-hand-peace-o" value="&#xf25b;" />
+			<enum name="fa-hand-pointer-o" value="&#xf25a;" />
+			<enum name="fa-hand-rock-o" value="&#xf255;" />
+			<enum name="fa-hand-scissors-o" value="&#xf257;" />
+			<enum name="fa-hand-spock-o" value="&#xf259;" />
+			<enum name="fa-hand-stop-o" value="&#xf256;" />
+			<enum name="fa-hard-of-hearing" value="&#xf2a4;" />
+			<enum name="fa-hashtag" value="&#xf292;" />
 			<enum name="fa-hdd-o" value="&#xf0a0;" />
 			<enum name="fa-header" value="&#xf1dc;" />
 			<enum name="fa-headphones" value="&#xf025;" />
@@ -278,16 +345,29 @@
 			<enum name="fa-home" value="&#xf015;" />
 			<enum name="fa-hospital-o" value="&#xf0f8;" />
 			<enum name="fa-hotel" value="&#xf236;" />
+			<enum name="fa-hourglass" value="&#xf254;" />
+			<enum name="fa-hourglass-1" value="&#xf251;" />
+			<enum name="fa-hourglass-2" value="&#xf252;" />
+			<enum name="fa-hourglass-3" value="&#xf253;" />
+			<enum name="fa-hourglass-end" value="&#xf253;" />
+			<enum name="fa-hourglass-half" value="&#xf252;" />
+			<enum name="fa-hourglass-o" value="&#xf250;" />
+			<enum name="fa-hourglass-start" value="&#xf251;" />
+			<enum name="fa-houzz" value="&#xf27c;" />
 			<enum name="fa-html5" value="&#xf13b;" />
+			<enum name="fa-i-cursor" value="&#xf246;" />
 			<enum name="fa-ils" value="&#xf20b;" />
 			<enum name="fa-image" value="&#xf03e;" />
 			<enum name="fa-inbox" value="&#xf01c;" />
 			<enum name="fa-indent" value="&#xf03c;" />
+			<enum name="fa-industry" value="&#xf275;" />
 			<enum name="fa-info" value="&#xf129;" />
 			<enum name="fa-info-circle" value="&#xf05a;" />
 			<enum name="fa-inr" value="&#xf156;" />
 			<enum name="fa-instagram" value="&#xf16d;" />
 			<enum name="fa-institution" value="&#xf19c;" />
+			<enum name="fa-internet-explorer" value="&#xf26b;" />
+			<enum name="fa-intersex" value="&#xf224;" />
 			<enum name="fa-ioxhost" value="&#xf208;" />
 			<enum name="fa-italic" value="&#xf033;" />
 			<enum name="fa-joomla" value="&#xf1aa;" />
@@ -326,13 +406,18 @@
 			<enum name="fa-long-arrow-left" value="&#xf177;" />
 			<enum name="fa-long-arrow-right" value="&#xf178;" />
 			<enum name="fa-long-arrow-up" value="&#xf176;" />
+			<enum name="fa-low-vision" value="&#xf2a8;" />
 			<enum name="fa-magic" value="&#xf0d0;" />
 			<enum name="fa-magnet" value="&#xf076;" />
 			<enum name="fa-mail-forward" value="&#xf064;" />
 			<enum name="fa-mail-reply" value="&#xf112;" />
 			<enum name="fa-mail-reply-all" value="&#xf122;" />
 			<enum name="fa-male" value="&#xf183;" />
+			<enum name="fa-map" value="&#xf279;" />
 			<enum name="fa-map-marker" value="&#xf041;" />
+			<enum name="fa-map-o" value="&#xf278;" />
+			<enum name="fa-map-pin" value="&#xf276;" />
+			<enum name="fa-map-signs" value="&#xf277;" />
 			<enum name="fa-mars" value="&#xf222;" />
 			<enum name="fa-mars-double" value="&#xf227;" />
 			<enum name="fa-mars-stroke" value="&#xf229;" />
@@ -350,17 +435,27 @@
 			<enum name="fa-minus-circle" value="&#xf056;" />
 			<enum name="fa-minus-square" value="&#xf146;" />
 			<enum name="fa-minus-square-o" value="&#xf147;" />
+			<enum name="fa-mixcloud" value="&#xf289;" />
 			<enum name="fa-mobile" value="&#xf10b;" />
 			<enum name="fa-mobile-phone" value="&#xf10b;" />
+			<enum name="fa-modx" value="&#xf285;" />
 			<enum name="fa-money" value="&#xf0d6;" />
 			<enum name="fa-moon-o" value="&#xf186;" />
 			<enum name="fa-mortar-board" value="&#xf19d;" />
 			<enum name="fa-motorcycle" value="&#xf21c;" />
+			<enum name="fa-mouse-pointer" value="&#xf245;" />
 			<enum name="fa-music" value="&#xf001;" />
 			<enum name="fa-navicon" value="&#xf0c9;" />
 			<enum name="fa-neuter" value="&#xf22c;" />
 			<enum name="fa-newspaper-o" value="&#xf1ea;" />
+			<enum name="fa-object-group" value="&#xf247;" />
+			<enum name="fa-object-ungroup" value="&#xf248;" />
+			<enum name="fa-odnoklassniki" value="&#xf263;" />
+			<enum name="fa-odnoklassniki-square" value="&#xf264;" />
+			<enum name="fa-opencart" value="&#xf23d;" />
 			<enum name="fa-openid" value="&#xf19b;" />
+			<enum name="fa-opera" value="&#xf26a;" />
+			<enum name="fa-optin-monster" value="&#xf23c;" />
 			<enum name="fa-outdent" value="&#xf03b;" />
 			<enum name="fa-pagelines" value="&#xf18c;" />
 			<enum name="fa-paint-brush" value="&#xf1fc;" />
@@ -370,18 +465,22 @@
 			<enum name="fa-paragraph" value="&#xf1dd;" />
 			<enum name="fa-paste" value="&#xf0ea;" />
 			<enum name="fa-pause" value="&#xf04c;" />
+			<enum name="fa-pause-circle" value="&#xf28b;" />
+			<enum name="fa-pause-circle-o" value="&#xf28c;" />
 			<enum name="fa-paw" value="&#xf1b0;" />
 			<enum name="fa-paypal" value="&#xf1ed;" />
 			<enum name="fa-pencil" value="&#xf040;" />
 			<enum name="fa-pencil-square" value="&#xf14b;" />
 			<enum name="fa-pencil-square-o" value="&#xf044;" />
+			<enum name="fa-percent" value="&#xf295;" />
 			<enum name="fa-phone" value="&#xf095;" />
 			<enum name="fa-phone-square" value="&#xf098;" />
 			<enum name="fa-photo" value="&#xf03e;" />
 			<enum name="fa-picture-o" value="&#xf03e;" />
 			<enum name="fa-pie-chart" value="&#xf200;" />
-			<enum name="fa-pied-piper" value="&#xf1a7;" />
+			<enum name="fa-pied-piper" value="&#xf2ae;" />
 			<enum name="fa-pied-piper-alt" value="&#xf1a8;" />
+			<enum name="fa-pied-piper-pp" value="&#xf1a7;" />
 			<enum name="fa-pinterest" value="&#xf0d2;" />
 			<enum name="fa-pinterest-p" value="&#xf231;" />
 			<enum name="fa-pinterest-square" value="&#xf0d3;" />
@@ -396,11 +495,13 @@
 			<enum name="fa-plus-square-o" value="&#xf196;" />
 			<enum name="fa-power-off" value="&#xf011;" />
 			<enum name="fa-print" value="&#xf02f;" />
+			<enum name="fa-product-hunt" value="&#xf288;" />
 			<enum name="fa-puzzle-piece" value="&#xf12e;" />
 			<enum name="fa-qq" value="&#xf1d6;" />
 			<enum name="fa-qrcode" value="&#xf029;" />
 			<enum name="fa-question" value="&#xf128;" />
 			<enum name="fa-question-circle" value="&#xf059;" />
+			<enum name="fa-question-circle-o" value="&#xf29c;" />
 			<enum name="fa-quote-left" value="&#xf10d;" />
 			<enum name="fa-quote-right" value="&#xf10e;" />
 			<enum name="fa-ra" value="&#xf1d0;" />
@@ -408,14 +509,17 @@
 			<enum name="fa-rebel" value="&#xf1d0;" />
 			<enum name="fa-recycle" value="&#xf1b8;" />
 			<enum name="fa-reddit" value="&#xf1a1;" />
+			<enum name="fa-reddit-alien" value="&#xf281;" />
 			<enum name="fa-reddit-square" value="&#xf1a2;" />
 			<enum name="fa-refresh" value="&#xf021;" />
+			<enum name="fa-registered" value="&#xf25d;" />
 			<enum name="fa-remove" value="&#xf00d;" />
 			<enum name="fa-renren" value="&#xf18b;" />
 			<enum name="fa-reorder" value="&#xf0c9;" />
 			<enum name="fa-repeat" value="&#xf01e;" />
 			<enum name="fa-reply" value="&#xf112;" />
 			<enum name="fa-reply-all" value="&#xf122;" />
+			<enum name="fa-resistance" value="&#xf1d0;" />
 			<enum name="fa-retweet" value="&#xf079;" />
 			<enum name="fa-rmb" value="&#xf157;" />
 			<enum name="fa-road" value="&#xf018;" />
@@ -428,8 +532,10 @@
 			<enum name="fa-rub" value="&#xf158;" />
 			<enum name="fa-ruble" value="&#xf158;" />
 			<enum name="fa-rupee" value="&#xf156;" />
+			<enum name="fa-safari" value="&#xf267;" />
 			<enum name="fa-save" value="&#xf0c7;" />
 			<enum name="fa-scissors" value="&#xf0c4;" />
+			<enum name="fa-scribd" value="&#xf28a;" />
 			<enum name="fa-search" value="&#xf002;" />
 			<enum name="fa-search-minus" value="&#xf010;" />
 			<enum name="fa-search-plus" value="&#xf00e;" />
@@ -447,10 +553,14 @@
 			<enum name="fa-shield" value="&#xf132;" />
 			<enum name="fa-ship" value="&#xf21a;" />
 			<enum name="fa-shirtsinbulk" value="&#xf214;" />
+			<enum name="fa-shopping-bag" value="&#xf290;" />
+			<enum name="fa-shopping-basket" value="&#xf291;" />
 			<enum name="fa-shopping-cart" value="&#xf07a;" />
 			<enum name="fa-sign-in" value="&#xf090;" />
+			<enum name="fa-sign-language" value="&#xf2a7;" />
 			<enum name="fa-sign-out" value="&#xf08b;" />
 			<enum name="fa-signal" value="&#xf012;" />
+			<enum name="fa-signing" value="&#xf2a7;" />
 			<enum name="fa-simplybuilt" value="&#xf215;" />
 			<enum name="fa-sitemap" value="&#xf0e8;" />
 			<enum name="fa-skyatlas" value="&#xf216;" />
@@ -459,6 +569,9 @@
 			<enum name="fa-sliders" value="&#xf1de;" />
 			<enum name="fa-slideshare" value="&#xf1e7;" />
 			<enum name="fa-smile-o" value="&#xf118;" />
+			<enum name="fa-snapchat" value="&#xf2ab;" />
+			<enum name="fa-snapchat-ghost" value="&#xf2ac;" />
+			<enum name="fa-snapchat-square" value="&#xf2ad;" />
 			<enum name="fa-soccer-ball-o" value="&#xf1e3;" />
 			<enum name="fa-sort" value="&#xf0dc;" />
 			<enum name="fa-sort-alpha-asc" value="&#xf15d;" />
@@ -491,7 +604,11 @@
 			<enum name="fa-step-backward" value="&#xf048;" />
 			<enum name="fa-step-forward" value="&#xf051;" />
 			<enum name="fa-stethoscope" value="&#xf0f1;" />
+			<enum name="fa-sticky-note" value="&#xf249;" />
+			<enum name="fa-sticky-note-o" value="&#xf24a;" />
 			<enum name="fa-stop" value="&#xf04d;" />
+			<enum name="fa-stop-circle" value="&#xf28d;" />
+			<enum name="fa-stop-circle-o" value="&#xf28e;" />
 			<enum name="fa-street-view" value="&#xf21d;" />
 			<enum name="fa-strikethrough" value="&#xf0cc;" />
 			<enum name="fa-stumbleupon" value="&#xf1a4;" />
@@ -509,6 +626,7 @@
 			<enum name="fa-tags" value="&#xf02c;" />
 			<enum name="fa-tasks" value="&#xf0ae;" />
 			<enum name="fa-taxi" value="&#xf1ba;" />
+			<enum name="fa-television" value="&#xf26c;" />
 			<enum name="fa-tencent-weibo" value="&#xf1d5;" />
 			<enum name="fa-terminal" value="&#xf120;" />
 			<enum name="fa-text-height" value="&#xf034;" />
@@ -516,6 +634,7 @@
 			<enum name="fa-th" value="&#xf00a;" />
 			<enum name="fa-th-large" value="&#xf009;" />
 			<enum name="fa-th-list" value="&#xf00b;" />
+			<enum name="fa-themeisle" value="&#xf2b2;" />
 			<enum name="fa-thumb-tack" value="&#xf08d;" />
 			<enum name="fa-thumbs-down" value="&#xf165;" />
 			<enum name="fa-thumbs-o-down" value="&#xf088;" />
@@ -532,6 +651,7 @@
 			<enum name="fa-toggle-on" value="&#xf205;" />
 			<enum name="fa-toggle-right" value="&#xf152;" />
 			<enum name="fa-toggle-up" value="&#xf151;" />
+			<enum name="fa-trademark" value="&#xf25c;" />
 			<enum name="fa-train" value="&#xf238;" />
 			<enum name="fa-transgender" value="&#xf224;" />
 			<enum name="fa-transgender-alt" value="&#xf225;" />
@@ -539,6 +659,7 @@
 			<enum name="fa-trash-o" value="&#xf014;" />
 			<enum name="fa-tree" value="&#xf1bb;" />
 			<enum name="fa-trello" value="&#xf181;" />
+			<enum name="fa-tripadvisor" value="&#xf262;" />
 			<enum name="fa-trophy" value="&#xf091;" />
 			<enum name="fa-truck" value="&#xf0d1;" />
 			<enum name="fa-try" value="&#xf195;" />
@@ -546,18 +667,21 @@
 			<enum name="fa-tumblr" value="&#xf173;" />
 			<enum name="fa-tumblr-square" value="&#xf174;" />
 			<enum name="fa-turkish-lira" value="&#xf195;" />
+			<enum name="fa-tv" value="&#xf26c;" />
 			<enum name="fa-twitch" value="&#xf1e8;" />
 			<enum name="fa-twitter" value="&#xf099;" />
 			<enum name="fa-twitter-square" value="&#xf081;" />
 			<enum name="fa-umbrella" value="&#xf0e9;" />
 			<enum name="fa-underline" value="&#xf0cd;" />
 			<enum name="fa-undo" value="&#xf0e2;" />
+			<enum name="fa-universal-access" value="&#xf29a;" />
 			<enum name="fa-university" value="&#xf19c;" />
 			<enum name="fa-unlink" value="&#xf127;" />
 			<enum name="fa-unlock" value="&#xf09c;" />
 			<enum name="fa-unlock-alt" value="&#xf13e;" />
 			<enum name="fa-unsorted" value="&#xf0dc;" />
 			<enum name="fa-upload" value="&#xf093;" />
+			<enum name="fa-usb" value="&#xf287;" />
 			<enum name="fa-usd" value="&#xf155;" />
 			<enum name="fa-user" value="&#xf007;" />
 			<enum name="fa-user-md" value="&#xf0f0;" />
@@ -569,10 +693,14 @@
 			<enum name="fa-venus-double" value="&#xf226;" />
 			<enum name="fa-venus-mars" value="&#xf228;" />
 			<enum name="fa-viacoin" value="&#xf237;" />
+			<enum name="fa-viadeo" value="&#xf2a9;" />
+			<enum name="fa-viadeo-square" value="&#xf2aa;" />
 			<enum name="fa-video-camera" value="&#xf03d;" />
+			<enum name="fa-vimeo" value="&#xf27d;" />
 			<enum name="fa-vimeo-square" value="&#xf194;" />
 			<enum name="fa-vine" value="&#xf1ca;" />
 			<enum name="fa-vk" value="&#xf189;" />
+			<enum name="fa-volume-control-phone" value="&#xf2a0;" />
 			<enum name="fa-volume-down" value="&#xf027;" />
 			<enum name="fa-volume-off" value="&#xf026;" />
 			<enum name="fa-volume-up" value="&#xf028;" />
@@ -582,16 +710,25 @@
 			<enum name="fa-weixin" value="&#xf1d7;" />
 			<enum name="fa-whatsapp" value="&#xf232;" />
 			<enum name="fa-wheelchair" value="&#xf193;" />
+			<enum name="fa-wheelchair-alt" value="&#xf29b;" />
 			<enum name="fa-wifi" value="&#xf1eb;" />
+			<enum name="fa-wikipedia-w" value="&#xf266;" />
 			<enum name="fa-windows" value="&#xf17a;" />
 			<enum name="fa-won" value="&#xf159;" />
 			<enum name="fa-wordpress" value="&#xf19a;" />
+			<enum name="fa-wpbeginner" value="&#xf297;" />
+			<enum name="fa-wpforms" value="&#xf298;" />
 			<enum name="fa-wrench" value="&#xf0ad;" />
 			<enum name="fa-xing" value="&#xf168;" />
 			<enum name="fa-xing-square" value="&#xf169;" />
+			<enum name="fa-y-combinator" value="&#xf23b;" />
+			<enum name="fa-y-combinator-square" value="&#xf1d4;" />
 			<enum name="fa-yahoo" value="&#xf19e;" />
+			<enum name="fa-yc" value="&#xf23b;" />
+			<enum name="fa-yc-square" value="&#xf1d4;" />
 			<enum name="fa-yelp" value="&#xf1e9;" />
 			<enum name="fa-yen" value="&#xf157;" />
+			<enum name="fa-yoast" value="&#xf2b1;" />
 			<enum name="fa-youtube" value="&#xf167;" />
 			<enum name="fa-youtube-play" value="&#xf16a;" />
 			<enum name="fa-youtube-square" value="&#xf166;" />

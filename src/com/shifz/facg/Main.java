@@ -23,7 +23,7 @@ public class Main {
 		System.out.println("FACG Finished");
 	}
 
-	private static void saveFile(String fileName, String data) throws Exception {
+	static void saveFile(String fileName, String data) throws Exception {
 	
 		File f = new File(fileName);
 		if(!f.exists()){
