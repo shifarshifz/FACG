@@ -94,13 +94,13 @@ public class FACG {
     }
 
     //Generating cheatcodes
-    public String getXmlString() throws Exception {
+    public String getXmlString2() throws Exception {
 
         stringBuilder.delete(0, stringBuilder.length());
 
         //Creating each string resource
         for (Entry<String, String> entry : cheatHash.entrySet()) {
-            stringBuilder.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey(), entry.getValue()));
+            stringBuilder.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey(), entry.getKey()));
         }
 
         //returning final xml

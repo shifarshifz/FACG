@@ -6,34 +6,34 @@ import java.io.FileWriter;
 
 public class Main {
 
-	public static void main(String[] args) throws Exception{
-		
-		System.out.println("Starting FACG...");
-		
-		FACG mFacg = FACG.getInstance();
-		
-		String asXmlStrings = mFacg.getXmlString();
-		String asXmlEnums = mFacg.getXmlEnum();
-		String asJavaEnums = mFacg.getJavaEnum();
-		
-		saveFile("string.xml",asXmlStrings);
-		saveFile("attrs.xml",asXmlEnums);
-		saveFile("FaIcon.java",asJavaEnums);
-		
-		System.out.println("FACG Finished");
-	}
+    public static void main(String[] args) throws Exception {
 
-	static void saveFile(String fileName, String data) throws Exception {
-	
-		File f = new File(fileName);
-		if(!f.exists()){
-			f.createNewFile();
-		}
-		BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-		bw.write(data);
-		bw.flush();
-		bw.close();
-		
-		System.out.println(fileName+" saved!");
-	}
+        System.out.println("Starting FACG...");
+
+        FACG mFacg = FACG.getInstance();
+
+        String asXmlStrings = mFacg.getXmlString2();
+        String asXmlEnums = mFacg.getXmlEnum();
+        String asJavaEnums = mFacg.getJavaEnum();
+
+        saveFile("string.xml", asXmlStrings);
+        saveFile("attrs.xml", asXmlEnums);
+        saveFile("FaIcon.java", asJavaEnums);
+
+        System.out.println("FACG Finished");
+    }
+
+    static void saveFile(String fileName, String data) throws Exception {
+
+        File f = new File(fileName);
+        if (!f.exists()) {
+            f.createNewFile();
+        }
+        BufferedWriter bw = new BufferedWriter(new FileWriter(f));
+        bw.write(data);
+        bw.flush();
+        bw.close();
+
+        System.out.println(fileName + " saved!");
+    }
 }
