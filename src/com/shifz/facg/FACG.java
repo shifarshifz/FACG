@@ -100,7 +100,7 @@ public class FACG {
 
         //Creating each string resource
         for (Entry<String, String> entry : cheatHash.entrySet()) {
-            stringBuilder.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey(), entry.getKey()));
+            stringBuilder.append(String.format(STRING_RESOURCE_FORMAT, entry.getKey().replaceAll("-", "_"), entry.getKey()));
         }
 
         //returning final xml
